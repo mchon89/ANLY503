@@ -1,3 +1,7 @@
+# Michael Chon
+# ANLY503 Portfolio
+# ggplot2
+
 library(ggplot2)
 library(ggthemes)
 
