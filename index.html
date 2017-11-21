@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<head>
+
+<style>
+
+html, body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-position: center top;
+  background-size: cover;
+  margin: 0;
+}
+
+a {
+  color: #204156;
+  text-decoration: none;
+}
+
+.page-title {
+  text-align: center;
+  font-weight: 100;
+}
+
+.page-description {
+  border: 1px solid #000;
+  margin: 2px;
+  text-align: center;
+  padding: 30px;
+}
+
+.gallery {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-item {
+  margin: 25px;
+}
+
+.gallery-item .thumbnail {
+  border: 5px solid #fff;
+}
+
+
+
+/* FOOTER */
+
+
+
+nav {
+  background-color: #FFF;
+}
+
+nav li {
+  display: inline;
+  margin: 0;
+  padding: 0 10px;
+}
+
+nav ul {
+  display: inline;
+}
+
+.contact-btn {
+  float: right;
+}
+
+.contact-btn a {
+  cursor: pointer;
+  margin-right: 30px;
+  padding: 8px 18px;
+  border: 1px solid #204156;
+
+}
+
+.contact-btn a:active {
+
+}
+
+nav a {
+  height: 60px;
+  line-height: 60px;
+  color: #204156;
+  text-decoration: none;
+}
+           
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: grey;
+    max-width:1357px;
+}
+
+
+
+/* DROPDOWN  */
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: grey;
+    max-width:1357px;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: grey;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: light grey}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+/* TABLE  */
+
+
+
+td {
+    padding: 15px;
+    text-align: left;
+    width: 500px;
+}
+
+tr{
+   padding: 0px;
+   text-align: top;
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<ul>
+    <li><a href="http://mc2153.georgetown.domains/">MC2153:ANLY503 PORTFOLIO</a></li>
+    
+    <li class="dropdown">
+      <a href="http://mc2153.georgetown.domains/python3/python3_index.html" class="dropbtn">Bokeh/Python3</a>
+        <div class="dropdown-content">
+          <a href="https://mc2153.georgetown.domains/python3/python3_1/bokeh_1.html" target="_blank">GOLD vs OIL vs CPI</a>
+          <a href="https://mc2153.georgetown.domains/python3/python3_2/bokeh_2.html" target="_blank">The Map of Gun Violence Casualty</a>
+        </div>
+    </li>
+    <li class="dropdown">
+      <a href="http://mc2153.georgetown.domains/tableau/tableau_index.html" class="dropbtn">Tableau</a>
+        <div class="dropdown-content">
+          <a href="https://mc2153.georgetown.domains/tableau/tableau_1/1.html" target="_blank">Theft vs Battery in Chicago</a>
+          <a href="https://mc2153.georgetown.domains/tableau/tableau_2/2.html" target="_blank">WELCOME TO LAS VEGAS</a>         
+        </div>
+    </li>
+    <li class="dropdown">
+      <a href="http://mc2153.georgetown.domains/ggplot2/ggplot2_index.html" class="dropbtn">ggplot2/R</a>
+        <div class="dropdown-content">
+          <a href="https://mc2153.georgetown.domains/ggplot2/ggplot2_1.png" target="_blank">Mutation vs Neoantigen</a>
+          <a href="https://mc2153.georgetown.domains/ggplot2/ggplot2_2.png" target="_blank">The Waffle Chart of CS languages</a>         
+        </div>
+    </li>
+    <li class="dropdown">
+      <a href="http://mc2153.georgetown.domains/network/network_index.html" class="dropbtn">network</a>
+        <div class="dropdown-content">
+          <a href="https://mc2153.georgetown.domains/network/network_1/network_1.html" target="_blank">NetworkD3: A Storm of Swords</a>
+          <a href="https://mc2153.georgetown.domains/network/network_2/network_2.html" target="_blank">Non-D3: Heatmap of A Storm of Swords</a>         
+        </div>
+    </li>  
+    <li class="dropdown">
+      <a href="http://mc2153.georgetown.domains/plotly/plotly_index.html" class="dropbtn">plotly</a>
+        <div class="dropdown-content">
+          <a href="https://mc2153.georgetown.domains/plotly/plotly_1/plotly_1.html" target="_blank">Interactive Map of Global Terror Attack</a>
+          <a href="https://mc2153.georgetown.domains/plotly/plotly_2/plotly_2.html" target="_blank">3D clustering of British Fictions</a>
+        </div>
+    </li> 
+    <li class="dropdown">    
+      <a href="http://mc2153.georgetown.domains/leaflet/leaflet_index.html" class="dropbtn">Leaflet/R</a>
+        <div class="dropdown-content">
+          <a href="https://mc2153.georgetown.domains/leaflet/leaflet.html" target="_blank">Unemployment vs Confederate Symbols</a>
+        </div>
+    </li>         
+    <li class="dropdown">  
+      <a href="http://mc2153.georgetown.domains/wordcloud/wordcloud_index.html" class="dropbtn">WordCloud</a>
+        <div class="dropdown-content">
+          <a href="https://mc2153.georgetown.domains/wordcloud/wordcloud.png" target="_blank">Jane Austen wordcloud</a>
+        </div>
+    </li>
+</ul>
+
+
+<table>
+   <tr>
+      <td>
+       <img src="http://mc2153.georgetown.domains/rip_chester.jpg" height="300" width="500">
+      </td>
+      <td>
+         <p><strong>SUMMARY OF THE PORTFOLIO</strong>
+         <br>Bokeh/Python3: 2 Interactive (1 temporal, 1 map)
+         <br>Tableau: 2 Interactive
+         <br>ggplot2/R: 2 Non-Interactive
+         <br>Network: 2 Interactive
+         <br>Plotly: 2 Interactive (1 spacial and temporal map)
+         <br>Leaflet/R: 1 Interactive
+         <br>WorldCloud: 1 Non-Interactive
+         <br>
+         <br>Interactive: 9
+         <br>Non-Interactive: 3
+         <br>Total: 12 visualizations</p>
+         <p><font color=#002b80><strong>MICHAEL CHON</strong>
+          <br>MS in Analytics - Data Science
+          <br>Georgetown University</font></p>
+   </tr>
+</table>
+
+
+
+</body>
+
+</html>
