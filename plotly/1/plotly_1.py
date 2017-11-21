@@ -52,8 +52,8 @@ layout = dict(
 		title = 'The Interactive Map of Terrorism in The World',
 		showlegend = False,
 		geo = dict(
-        	scope='world',
-            	projection=dict(type="natural earth"),			
+        scope='world',
+        projection=dict(type="natural earth"),			
 		showland = True,
 		landcolor = 'ryb(217, 217, 217)',
                 subunitwidth=1,
