@@ -27,16 +27,19 @@ del states['HI']
 states_unique = df['State'].unique()
 states_df = {}
 
+# Writing i
 for i in range(0,len(df)):
     if df['State'][i] in states_df:
         states_df[df['State'][i]] = states_df[df['State'][i]] + df['Total'][i]
     else:
         states_df[df['State'][i]] = 0
 
+# Writing lat and longs for the states
 state_xs = [states[code]["lons"] for code in states]
 state_ys = [states[code]["lats"] for code in states]
 state_name = [states[code]["name"] for code in states]
 
+# For missing states
 state_missing = [state for state in state_name if state not in list(states_df.keys())]
 
 for i in range(len(state_missing)):
@@ -44,6 +47,7 @@ for i in range(len(state_missing)):
 
 state_total = [states_df[states[code]["name"]] for code in states]
 
+# Writing color for the number of killed based on the summary
 color_scheme = list(states_df.values())
 color_scheme_to_pd = pd.Series(color_scheme)
 summary = color_scheme_to_pd.describe()
@@ -61,6 +65,7 @@ for abbre in state_list:
     if states_df[states[abbre]['name']] >= summary['75%'] and states_df[states[abbre]['name']] <= summary['max']:
         state_color[states[abbre]['name']] = colors[3]
 
+# Writing the severity 
 state_color = [state_color[states[code]["name"]] for code in states]
 state_severe = []
 
@@ -74,6 +79,7 @@ for i in range(len(state_color)):
     elif state_color[i] == "#980043":
         state_severe.append('Very Dangerous')
 
+# Plotting everything on the map 
 source = ColumnDataSource(data=dict(
     x=state_xs,
     y=state_ys,
